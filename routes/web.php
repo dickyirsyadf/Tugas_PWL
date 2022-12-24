@@ -40,6 +40,9 @@ Route::middleware('is_admin')->group(function () {
         Route::patch('book/update', [App\Http\Controllers\AdminController::class, 'update_book'])->name("admin.book.update");
         Route::get('ajaxadmin/dataBuku/{id}', [App\Http\Controllers\AdminController::class, 'getDataBuku']);
         Route::post('books/delete/{id}', [App\Http\Controllers\AdminController::class, 'delete_book']);
+        Route::get('print_books', [App\Http\Controllers\AdminController::class, 'print_books'])->name('print.books');
+        Route::get('books/export', [App\Http\Controllers\AdminController::class, 'export'])->name('admin.books.export');
+        Route::post('books/import', [App\Http\Controllers\AdminController::class, 'import'])->name('admin.books.import');
     });
 });
 
