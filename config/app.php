@@ -1,8 +1,8 @@
 <?php
+use Barryvdh\DomPDF\PDF;
 
 return [
-
-    /*
+ /*
     |--------------------------------------------------------------------------
     | Application Name
     |--------------------------------------------------------------------------
@@ -165,7 +165,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+            Barryvdh\DomPDF\ServiceProvider::class,
+            Maatwebsite\Excel\ExcelServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -189,6 +190,9 @@ return [
     */
 
     'aliases' => [
+
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Excel' => Maatwebsite\Excel\Facade\Excel::class,
 
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,

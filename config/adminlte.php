@@ -405,7 +405,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -425,7 +425,7 @@ return [
             ],
         ],
         'Select2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -440,7 +440,7 @@ return [
             ],
         ],
         'Chartjs' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -450,17 +450,17 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
                     'asset' => false,
-                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@8',
+                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@11',
                 ],
             ],
         ],
         'Pace' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'css',
